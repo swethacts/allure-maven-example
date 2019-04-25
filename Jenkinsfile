@@ -24,7 +24,7 @@ pipeline {
          jdk: '',
          properties: [[key: 'allure.issues.tracker.pattern', value: 'http://tracker.company.com/%s']],
          reportBuildPolicy: 'ALWAYS',
-         results: [[path: 'first-module/target/allure-results'], [path: 'second-module/target/allure-results']]
+         results: [[path: 'target/allure-results'], [path: 'other_target/allure-results']]
          ])
     }
     }
